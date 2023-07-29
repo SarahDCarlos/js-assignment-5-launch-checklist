@@ -14,14 +14,24 @@ function addDestinationInfo(document, name, diameter, star, distance, moons, ima
                 </ol>
                 <img src="">
    */
+
+
 }
 
+// Validating to see if the data passed in is the correct one
 function validateInput(testInput) {
-   
+    if (testInput === 0 || testInput === "") {
+        return "Empty";
+     } else if (isNaN(testInput)) {
+         return "Not a Number";
+     } else {
+         return "is a Number";
+     }
 }
 
 function formSubmission(document, list, pilot, copilot, fuelLevel, cargoLevel) {
-   
+   // setting variables for the launch status check and grabbing by ID
+
 }
 
 async function myFetch() {
